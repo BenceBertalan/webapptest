@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}About – WebApp Test{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>About This App</h1>
+    <p>This is a sample website generated to demonstrate deployment on Azure App Service using Python 3.10.</p>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h2>🛠️ Stack</h2>
+        <ul>
+            <li>Python 3.10</li>
+            <li>Flask 3.0</li>
+            <li>Gunicorn (WSGI server)</li>
+            <li>Azure App Service</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>🚀 Deployment</h2>
+        <p>Deploy with a simple <code>git push</code> via Azure deployment center, GitHub Actions, or ZIP deploy.</p>
+    </div>
+    <div class="card">
+        <h2>📂 Structure</h2>
+        <ul>
+            <li><code>app.py</code> – application entry point</li>
+            <li><code>requirements.txt</code> – Python dependencies</li>
+            <li><code>templates/</code> – Jinja2 HTML templates</li>
+            <li><code>static/</code> – CSS and static assets</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

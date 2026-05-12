@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Home – WebApp Test{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to WebApp Test</h1>
+    <p>A sample Python 3.10 web application ready for deployment on <strong>Azure App Service</strong>.</p>
+    <a href="{{ url_for('about') }}" class="btn">Learn More</a>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h2>⚡ Fast</h2>
+        <p>Powered by Flask and served via Gunicorn for production-grade performance.</p>
+    </div>
+    <div class="card">
+        <h2>☁️ Cloud-Ready</h2>
+        <p>Configured out of the box for seamless deployment to Azure App Service.</p>
+    </div>
+    <div class="card">
+        <h2>🐍 Python 3.10</h2>
+        <p>Leverages the latest stable Python 3.10 runtime for modern language features.</p>
+    </div>
+</section>
+{% endblock %}
